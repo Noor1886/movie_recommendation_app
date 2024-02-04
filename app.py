@@ -7,7 +7,7 @@ from movie_app import genre_features
 
 
 # Load model and data
-with open("/home/abdul/movie_recommendation_app/movie_app.pkl", "rb") as f:
+with open("movie_app.pkl", "rb") as f:
     model = pickle.load(f)
 
 movies_df = pd.read_csv("movies.csv")
