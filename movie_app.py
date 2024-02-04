@@ -1,21 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[4]:
-
-
-from google.colab import drive
-
-
-# In[2]:
-
-
-drive.mount('/content/drive')
-
-
-# In[6]:
-
-
 import pandas as pd
 
 
