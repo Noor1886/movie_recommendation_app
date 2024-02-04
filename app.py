@@ -10,7 +10,7 @@ from movie_app import genre_features
 with open("/home/abdul/movie_recommendation_app/movie_app.pkl", "rb") as f:
     model = pickle.load(f)
 
-movies_df = pd.read_csv("/home/abdul/movie_recommendation_app/movies.csv")
+movies_df = pd.read_csv("movies.csv")
 # genre_features = pd.read_csv("/home/abdul/movie_recommendation_app/genre_features.csv")  # Load genre features separately
 
 # Function to get recommendations for a given user ID
