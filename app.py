@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import altair as alt
-from movie_app.ipynb import get_top5_recommendations
+# import altair as alt
+from movie_app import get_top5_recommendations
 
 
 # Load model and data
