@@ -3,6 +3,7 @@ import pandas as pd
 import pickle
 # import altair as alt
 from movie_app import get_top5_recommendations
+from movie_app import genre_features
 
 
 # Load model and data
@@ -10,7 +11,7 @@ with open("/home/abdul/movie_recommendation_app/movie_app.pkl", "rb") as f:
     model = pickle.load(f)
 
 movies_df = pd.read_csv("/home/abdul/movie_recommendation_app/movies.csv")
-genre_features = pd.read_csv("/home/abdul/movie_recommendation_app/genre_features.csv")  # Load genre features separately
+# genre_features = pd.read_csv("/home/abdul/movie_recommendation_app/genre_features.csv")  # Load genre features separately
 
 # Function to get recommendations for a given user ID
 def get_recommendations(user_id):
