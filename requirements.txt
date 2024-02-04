@@ -1,3 +1,4 @@
 google
 scikit-learn
 torch
+altair<5
